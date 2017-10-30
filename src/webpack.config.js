@@ -1,3 +1,6 @@
+/* This is the only webpack config file for now */
+// There will be different configs for 'PRODUCTION' & 'DEVELOPMENT' later.
+
 const path = require('path');
 
 var config = {
