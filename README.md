@@ -1,1 +1,1 @@
-# This is a simple todo list manager app.
+# This is a simple Todo list manager app.
