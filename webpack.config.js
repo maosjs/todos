@@ -7,14 +7,14 @@ var config = {
   devtool: 'cheap-source-map',
 
   devServer: {
-    contentBase: path.resolve(__dirname, '../dist')
+    contentBase: path.resolve(__dirname, 'dist')
   },
 
-  entry: path.resolve(__dirname, './client/index.js'),
+  entry: path.resolve(__dirname, 'src/index.js'),
 
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, 'dist'),
   },
 
   plugins: [],
@@ -23,7 +23,7 @@ var config = {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, './client'),
+        include: path.resolve(__dirname, 'src'),
         loader: "babel-loader"
       }
     ]

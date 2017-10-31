@@ -1,22 +1,27 @@
 {
-  "name": "todo-list",
-  "version": "0.0.1",
-  "description": "A Simple todo list management app.",
+  "name": "check_list-app",
+  "version": "0.0.2",
+  "description": "A Simple check list management app.",
   "main": "index.html",
   "scripts": {
-    "start": "node ./src/server/server.js",
-    "build": "webpack --config ./src/webpack.config.js"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "keywords": [
-    "todo",
-    "react",
-    "express",
-    "mongodb"
+    "check_list",
+    "react"
   ],
   "author": "Programr Opn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ospone/check_list-app.git"
+  },
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ospone/check_list-app/issues"
+  },
+  "homepage": "https://github.com/ospone/check_list-app#readme",
   "dependencies": {
-    "express": "^4.16.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
@@ -26,7 +31,6 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "webpack": "^3.8.1",
-    "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "^2.9.3"
   }
 }
