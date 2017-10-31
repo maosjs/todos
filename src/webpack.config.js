@@ -10,7 +10,7 @@ var config = {
     contentBase: path.resolve(__dirname, '../dist')
   },
 
-  entry: path.resolve(__dirname, './client/app.js'),
+  entry: path.resolve(__dirname, './client/index.js'),
 
   output: {
     filename: 'bundle.js',
