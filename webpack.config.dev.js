@@ -1,8 +1,8 @@
 'use strict';
-/* This is the only webpack config file for now */
-// There will be different configs for 'PRODUCTION' & 'DEVELOPMENT' later.
+
 const webpack = require('webpack');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var config = {
   devtool: 'cheap-source-map',
@@ -18,7 +18,10 @@ var config = {
   },
 
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/index.html')
+    })
   ],
 
   module: {

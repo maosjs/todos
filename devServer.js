@@ -3,7 +3,7 @@
 const webpack = require('webpack')
 const path = require('path');
 const webpackDevServer = require('webpack-dev-server');
-const config = require('./webpack.config.js'); //it includes the HMR plugin
+const config = require('./webpack.config.dev.js'); //it includes the HMR plugin
 
 let serverOptions = {
   hot: true,
