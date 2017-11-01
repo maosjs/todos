@@ -4,7 +4,7 @@
   "description": "A Simple check list management app.",
   "main": "index.html",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "node devServer.js",
     "build": "webpack"
   },
   "keywords": [
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ospone/check_list-app#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.0.0-beta.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
@@ -30,6 +31,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "react-hot-loader": "^3.0.0",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
   }

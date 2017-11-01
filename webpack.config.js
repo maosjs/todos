@@ -1,23 +1,25 @@
+'use strict';
 /* This is the only webpack config file for now */
 // There will be different configs for 'PRODUCTION' & 'DEVELOPMENT' later.
-
+const webpack = require('webpack');
 const path = require('path');
 
 var config = {
   devtool: 'cheap-source-map',
 
-  devServer: {
-    contentBase: path.resolve(__dirname, 'dist')
-  },
-
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: [
+    'react-hot-loader/patch',
+    path.resolve(__dirname, 'src/index.js')
+  ],
 
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
 
-  plugins: [],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
 
   module: {
     rules: [

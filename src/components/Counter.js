@@ -2,7 +2,9 @@ import React from 'react';
 
 const Counter = () => {
   return (
-    <p>This is a list items Counter</p>
+    <div>
+      <h4>This is a Items list Counter. [ Total Items: 5 ]</h4>
+    </div>
   );
 };
 

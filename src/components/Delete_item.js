@@ -2,7 +2,7 @@ import React from 'react';
 
 const Delete_item = () => {
   return (
-    <h4>This is a Delete confirmation component</h4>
+    <h4>This is a Delete item confirmation Component.</h4>
   );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Update_item = () => {
   return (
-    <h4>This component is to update item.</h4>
+    <h4>This is a Update item Component.</h4>
   );
 };
 

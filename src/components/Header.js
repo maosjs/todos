@@ -2,7 +2,12 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <h2>This is a Header</h2>
+    <nav>
+      <div className={"nav-wrapper"}>
+        <div className={"brand-logo center"}>This is my Check List</div>
+      </div>
+    </nav>
+
   );
 };
 
