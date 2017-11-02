@@ -9,7 +9,7 @@ var config = {
 
   entry: [
     'react-hot-loader/patch',
-    path.resolve(__dirname, 'src/index.js')
+    path.resolve(__dirname, 'src/index.dev.js')
   ],
 
   output: {
