@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <nav>
       <div className={"nav-wrapper"}>
-        <div className={"brand-logo center"}>This is my Check List</div>
+        <h1>My Check List</h1>
       </div>
     </nav>
 

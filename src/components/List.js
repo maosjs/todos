@@ -1,13 +1,27 @@
-import React from 'react';
-import List_item from './List_item';
+import React, { Component } from 'react';
 
-const List = () => {
+
+
+class List extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+
+  render() {
+
+let list=this.props.list.map((item) => {
+  return(
+     <li key={item.id}>{item.id} | {item.text} | {item.over.toString()} | {item.priority}</li>
+    )
+  });
+
   return (
-    <div>
-      <h4>This is a List Container & below are the individual list items that i contain.</h4>
-      <List_item />
-    </div>
-  );
-};
+      <ul>
+        {list}
+      </ul>
+    );
+  }
+}
 
 export default List;

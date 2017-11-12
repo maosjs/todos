@@ -1,11 +1,12 @@
-import React from 'react';
-
-const Counter = () => {
-  return (
-    <div>
-      <h4>This is a Items list Counter. [ Total Items: 5 ]</h4>
-    </div>
-  );
-};
-
-export default Counter;
+// import React from 'react';
+//
+// const Counter = (props) => {
+//
+//   return (
+//     <div>
+//
+//     </div>
+//   );
+// };
+//
+// export default Counter;
