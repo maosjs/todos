@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import List from './List';
 
-
 class Filters extends Component {
   constructor(props) {
     super(props);
@@ -9,7 +8,6 @@ class Filters extends Component {
       search: ''
     }
   }
-
 
   handleChange(e) {
     this.setState({search:e.target.value});
@@ -19,7 +17,7 @@ class Filters extends Component {
     return (
       <div>
         <input value={this.state.search} onChange={this.handleChange.bind(this)} />
-        <List list={this.props.list}/>
+        <List search={this.state.search} list={this.props.list}/>
       </div>
     );
   }
